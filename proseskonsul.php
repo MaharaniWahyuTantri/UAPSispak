@@ -67,9 +67,9 @@ function getNextGejalaOrSolusi($currentGejala, $jawaban)
         "G11" => ["YA" => "P10", "TIDAK" => "G27"],
         "G27" => ["YA" => "G28", "TIDAK" => "P11"],
         "G28" => ["YA" => "P11", "TIDAK" => "P11"],
-        "G29" => ["YA" => "P12", "TIDAK" => "P12"], 
-        "G34" => ["YA" => "P35", "TIDAK" => "P15"], 
-        "G35" => ["YA" => "P36", "TIDAK" => "P15"], 
+        "G29" => ["YA" => "P12", "TIDAK" => "G34"], 
+        "G34" => ["YA" => "G35", "TIDAK" => "P15"], 
+        "G35" => ["YA" => "G36", "TIDAK" => "P15"],
         "G36" => ["YA" => "P15", "TIDAK" => "P15"], 
 
         // G26: Jalur tambahan dari G26 -> TIDAK
