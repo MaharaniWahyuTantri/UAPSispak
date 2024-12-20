@@ -41,23 +41,23 @@ function getNextGejalaOrSolusi($currentGejala, $jawaban)
 
         // G01: Sulit mengunyah
         "G01" => ["YA" => "G04", "TIDAK" => "G16"],
-        "G04" => ["YA" => "G08", "TIDAK" => "P08"],
-        "G08" => ["YA" => "G02", "TIDAK" => "P08"],
+        "G04" => ["YA" => "G08", "TIDAK" => "G08"],
+        "G08" => ["YA" => "G02", "TIDAK" => "G02"],
         "G02" => ["YA" => "P08", "TIDAK" => "G05"],
-        "G05" => ["YA" => "G06", "TIDAK" => "P02"],
+        "G05" => ["YA" => "G06", "TIDAK" => "G06"],
         "G06" => ["YA" => "P02", "TIDAK" => "P02"],
 
         "G16" => ["YA" => "G02b", "TIDAK" => "G09"],
         "G09" => ["YA" => "G10", "TIDAK" => "G30"],
         "G10" => ["YA" => "P03", "TIDAK" => "P03"],
-        "G30" => ["YA" => "G31", "TIDAK" => "P13"], 
+        "G30" => ["YA" => "G31", "TIDAK" => "G31"], 
         "G31" => ["YA" => "P13", "TIDAK" => "P13"], 
 
         "G02b" => ["YA" => "G19", "TIDAK" => "G32"],
-        "G19" => ["YA" => "G37", "TIDAK" => "P16"],
+        "G19" => ["YA" => "G37", "TIDAK" => "G37"],
         "G37" => ["YA" => "P16", "TIDAK" => "P16"],
 
-        "G32" => ["YA" => "G33", "TIDAK" => "P14"],
+        "G32" => ["YA" => "G33", "TIDAK" => "G33"],
         "G33" => ["YA" => "P14", "TIDAK" => "P14"],
 
 
@@ -65,11 +65,11 @@ function getNextGejalaOrSolusi($currentGejala, $jawaban)
         "G26" => ["YA" => "G25", "TIDAK" => "G02a"], 
         "G25" => ["YA" => "G11", "TIDAK" => "G29"],
         "G11" => ["YA" => "P10", "TIDAK" => "G27"],
-        "G27" => ["YA" => "G28", "TIDAK" => "P11"],
+        "G27" => ["YA" => "G28", "TIDAK" => "G28"],
         "G28" => ["YA" => "P11", "TIDAK" => "P11"],
         "G29" => ["YA" => "P12", "TIDAK" => "G34"], 
-        "G34" => ["YA" => "G35", "TIDAK" => "P15"], 
-        "G35" => ["YA" => "G36", "TIDAK" => "P15"],
+        "G34" => ["YA" => "G35", "TIDAK" => "G35"], 
+        "G35" => ["YA" => "G36", "TIDAK" => "G36"],
         "G36" => ["YA" => "P15", "TIDAK" => "P15"], 
 
         // G26: Jalur tambahan dari G26 -> TIDAK
@@ -77,23 +77,23 @@ function getNextGejalaOrSolusi($currentGejala, $jawaban)
         "G01a" => ["YA" => "G03", "TIDAK" => "G16a"], 
         "G03" => ["YA" => "P01", "TIDAK" => "P01"], 
         "G16a" => ["YA" => "G17", "TIDAK" => "G05a"],
-        "G17" => ["YA" => "G18", "TIDAK" => "P06"],
+        "G17" => ["YA" => "G18", "TIDAK" => "G18"],
         "G18" => ["YA" => "P06", "TIDAK" => "P06"],
-        "G05a" => ["YA" => "G06a", "TIDAK" => "P07"],
-        "G06a" => ["YA" => "G19a", "TIDAK" => "P07"], 
-        "G19a" => ["YA" => "G20", "TIDAK" => "P07"], 
+        "G05a" => ["YA" => "G06a", "TIDAK" => "G06a"],
+        "G06a" => ["YA" => "G19a", "TIDAK" => "G19a"], 
+        "G19a" => ["YA" => "G20", "TIDAK" => "G20"], 
         "G20" => ["YA" => "P07", "TIDAK" => "P07"],
 
 
         "G11a" => ["YA" => "G12", "TIDAK" => "G21"],
         "G12" => ["YA" => "P04", "TIDAK" => "P04"],
-        "G13" => ["YA" => "G14", "TIDAK" => "P05"],
-        "G14" => ["YA" => "G15", "TIDAK" => "P05"],
+        "G13" => ["YA" => "G14", "TIDAK" => "G14"],
+        "G14" => ["YA" => "G15", "TIDAK" => "G15"],
         "G15" => ["YA" => "P05", "TIDAK" => "P05"],
 
-        "G21" => ["YA" => "G22", "TIDAK" => "P09"], 
-        "G22" => ["YA" => "G23", "TIDAK" => "P09"], 
-        "G23" => ["YA" => "G24", "TIDAK" => "P09"], 
+        "G21" => ["YA" => "G22", "TIDAK" => "G22"], 
+        "G22" => ["YA" => "G23", "TIDAK" => "G23"], 
+        "G23" => ["YA" => "G24", "TIDAK" => "G24"], 
         "G24" => ["YA" => "P09", "TIDAK" => "P09"], 
     ];
 
