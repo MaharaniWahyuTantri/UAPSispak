@@ -1,25 +1,25 @@
 <?php include "conf/inc.koneksi.php"; ?>
-      <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Sistem Pakar Metode Forward Chaining</h3>
-            </div>
-              <div class="panel-body">
-                <p class="text-justify">
-                Sistem pakar adalah sistem berbasis komputer yang menggunakan pengetahuan, fakta dan teknik penalaran dalam memecahkan masalah yang biasanya hanya dapat dipecahkan oleh seorang pakar dalam bidang tersebut. Sistem pakar adalah salah satu cabang dari AI (Artitificial Inteligence) yang membuat pengguna secara luas knowledge yang khusus untuk penyelesaian masalah tingkat manusia yang pakar. Seorang pakar adalah orang yang mempunyai keahlian dalam bidang tertentu, yaitu pakar yang mempunyai knowledge atau kemampuan khusus yang orang lain tidak mengetahui atau mampu dalam bidang yang dimilikinya.</p>
-				<p class="text-justify">
-				Mekanisme inferensi adalah bagian dari sistem pakar yang melakukan penalaran dengan menggunakan isi daftar aturan berdasarkan urutan dan pola tertentu. Selama proses konsultasi antar sistem dan pemakai, mekanisme inferensi menguji aturan satu demi satu sampai kondisi aturan itu benar. Forward chaining (runut maju) berarti menggunakan himpunan aturan kondisi-aksi. Dalam metode ini, data digunakan untuk menentukan aturan mana yang akan dijalankan, kemudian aturan tersebut dijalankan. Mungkin menambahkan data ke memori kerja. Proses diulang sampai ditemukan suatu hasil.
-                </p>
-                <p class="text-justify">
-                Penyakit gigi dan mulut merupakan salah satu masalah kesehatan yang banyak
-                dikeluhkan oleh masyarakat, karena mengganggu aktivitas pekerjaan setiap 
-                hari. Penyakit ini dapat menyerang mulai dari anak-anak sampai dewasa.
-                Minimnya pengetahuan kesehatan gigi dan mulut, terbatasnya sumber informasi 
-                serta biaya konsultasi yang mahaljuga menyebabkan rendahnya kesabaran 
-                masyarakat terhadap kesehatan gigi dan mulut.
-                </p><br>
-                <p class="text-center"><a class="btn btn-warning btn-lg" href="?page=consultation" role="button"><span class="glyphicon glyphicon-hand-up"></span> Mulai Konsultasi</a></p>
-              </div>
+<div class="container-fluid p-0">
+<link rel="stylesheet" href="path/to/general.css">
+  <section class="hero bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="news/gigi.png" alt="Sistem Pakar" class="img-fluid rounded-circle" style="max-width: 400px;">
+        </div>
+        <div class="col-md-8 text-center d-flex flex-column align-items-center">
+          <h1 class="font-weight-bold text-center">Sistem Pakar Diagnosis Penyakit Gigi & Mulut</h1>
+          <p class="text-center mt-3">
+            Mari memeriksakan kesehatan gigi dan mulut anda disini! Sistem pakar berbasis Forward Chaining ini akan mendiagnosis penyakit gigi dan mulut anda! Yuk Mulai Konsultasi!
+          </p>
+          <a class="btn custom-btn btn-lg mt-3" href="?page=consultation" role="button">
+            <i class="fa-solid fa-stethoscope"></i> Mulai Konsultasi
+          </a>
+        </div>
       </div>
+    </div>
+  </section>
+</div>
 
 
-      
+
