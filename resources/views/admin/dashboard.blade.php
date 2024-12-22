@@ -30,9 +30,9 @@
         />
     </section>
 
-    <section class="row">
+    {{-- <section class="row"> --}}
         {{-- log activity section --}}
-        <div class="col-md-6">
+        {{-- <div class="col-md-6">
             <x-card>
                 <x-slot name="title">
                     Log Activity
@@ -53,7 +53,7 @@
                     </tbody>
                 </table>
             </x-card>
-        </div>
+        </div> --}}
 
         {{-- chart section --}}
         <div class="col-md-6">
