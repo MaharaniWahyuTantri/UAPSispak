@@ -34,7 +34,7 @@
 
                     <label for=""><b><i class="fas fa-th mr-1"></i> Gejala-gejala</b></label>
                     @foreach($gejala as $key => $value)
-                        @php 
+                        @php
                         $mod = ($key + 1) % 2;
                         @endphp
 
@@ -48,15 +48,15 @@
                                 </div>
                                 <div>
                                     <select name="diagnosa[]" id="" class="form-control form-control-sm red-border">
-                                        <option value="{{ $value->id }}+-1">Pasti tidak</option>
-                                        <option value="{{ $value->id }}+-0.8">Hampir pasti tidak</option>
-                                        <option value="{{ $value->id }}+-0.6">Kemungkinan besar tidak</option>
-                                        <option value="{{ $value->id }}+-0.4">Mungkin tidak</option>
-                                        <option value="" selected>Tidak tahu</option>
-                                        <option value="{{ $value->id }}+0.4">Mungkin</option>
-                                        <option value="{{ $value->id }}+0.6">Sangat mungkin</option>
-                                        <option value="{{ $value->id }}+0.8">Hampir pasti</option>
-                                        <option value="{{ $value->id }}+1">Pasti</option>
+                                        <option value="{{ $value->id }}+-1">TIDAK</option>
+                                        <option value="{{ $value->id }}+-0.8">MENDEKATI TIDAK</option>
+                                        <option value="{{ $value->id }}+-0.6">BESAR KEMUNGKINAN TIDAK</option>
+                                        <option value="{{ $value->id }}+-0.4">SEPERTINYA TIDAK</option>
+                                        <option value="" selected>TIDAK TAHU</option>
+                                        <option value="{{ $value->id }}+0.4">MUNGKIN</option>
+                                        <option value="{{ $value->id }}+0.6">SEPERTINYA MUNGKIN</option>
+                                        <option value="{{ $value->id }}+0.8">MENDEKATI PASTI</option>
+                                        <option value="{{ $value->id }}+1">PASTI</option>
                                     </select>
                                 </div>
                             </div>
@@ -69,14 +69,14 @@
                     @if($key + 1 == \App\Models\Gejala::count() && $mod != 0)
                     </div>
                     @endif
-                        
+
                     @endforeach
                     <div class="mt-3">
                         <button type="submit" class="btn btn-primary">Diagnosa sekarang</button>
                     </div>
                 </div>
             </form>
-            </div>  
+            </div>
         </div>
     </section>
 
